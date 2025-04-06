@@ -1,0 +1,12 @@
+when i tried to run command flutter build apk --release error message occured
+#Error resolving plugin [id: 'com.google.gms.google-services', version: '4.4.2', apply: false]
+> The request for this plugin could not be satisfied because the plugin is already on the classpath with a different version (4.3.15).
+when asked chatgpt it is suggested to change android/build.gradle to change 4.4.2 to 4.3.15 changed
+while resolved that new problem arised minsdk version need to be min 21 not 19 
+changed the min sdk version in android/app/buildgradle file
+new error occured like the kotlin version is older change it to the latedest 
+i changed it to the latest version in android/settings.gradle file changed to 1.9.22 from 1.8.22
+still not resolved 
+the problem is in android/build gradle file i need to add kotlin plugin to the file added lets check fror update
+the problem was as the same not the latest version i changed it to the latest version whcih is 2.1.20 and it worked 
+made the apk file and downloade in mbiles and done the remainign message worked
